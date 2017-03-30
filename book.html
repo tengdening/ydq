@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>电子书阅读器</title>
+</head>
+<style>
+	.inner{
+		width: 400px;height: 500px;margin:50px auto;background: #ccc;overflow: hidden;padding:0px 30px 0px 15px;
+		position: relative;
+	}
+	.fu{
+		width: 15px;height: 100%;background: #999;position: absolute;right: 0;top: 0;
+	}
+	.zi{
+		width: 15px;height: 30px;background: #000;
+	}
+	.zi:hover{
+		opacity: 0.8;
+	}
+	.neirong{
+		width: auto;height: auto;
+	}
+	h4{
+		text-align: center;
+	}
+	p{
+		text-indent:2em;
+	}
+</style>
+<body>
+	<div class="inner">
+		<div class="fu">
+			<div class="zi"></div>
+		</div>
+		<div class="neirong">
+			<h4>任志琴个人简历</h4>
+			<p>查找当前元素的所有的父辈元素，直到遇到匹配的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，entsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找当前元素的所有的父个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+			<p>查找素的时候才会停下来。的那个元素为止。如果提供的jQuery代表了一组DOM元素，.parentsUntil()方法也能让我们找遍所有元素的祖先元素，直到遇到了一个跟提供的参数匹配的元素的时候才会停下来。这个返回的jQuery对象里包含了下面所有找到的父辈元素，但不包括那个选择器匹配到的元素</p>
+		</div>
+	</div>
+
+</body>
+<script src="jquery.js"></script>
+<script src="gunlunshijie.js"></script>
+<script>
+	var bh=$(".inner").height();
+	var ch=$(".neirong").innerHeight();
+	var bl=bh/ch;
+	$(".zi").height(function(){
+		return bl*bh;
+	})
+	// 去除inner的默认行为
+	$(".inner").on("mousedown",function(e){
+		e.preventDefault()
+	})
+	$(".zi").mousedown(function(e){
+		var cy=e.clientY;
+		var oldmt=parseInt($(".zi").css("margin-top"));
+		$(document).mousemove(function(e){
+			var my=e.clientY;
+			var mt=my-cy+oldmt;
+			if (mt<0) {
+				mt=0;
+			};
+			if (mt>bh-(bl*bh)) {
+				mt=bh-(bl*bh);
+			};
+			$(".zi").css("margin-top",mt);
+			$(".neirong").css("margin-top",-mt/bh*ch)
+		})
+
+		$(document).mouseup(function(){
+			$(document).off("mousemove mouseup");
+		})
+	})
+	// 滚轮滚动
+	$(".neirong").mousewheel(function(){
+		console.log("上");
+		var nt=parseInt($(".zi").css("margin-top"));
+		nt-=10;
+		if (nt<0) {
+			nt=0;
+		};
+		$(".zi").css("margin-top",nt);
+		$(".neirong").css("margin-top",-nt/bh*ch)
+	},function(){
+		console.log("下");
+		var nt=parseInt($(".zi").css("margin-top"));
+		nt+=10;
+		if (nt>bh-(bl*bh)) {
+			nt=bh-(bl*bh);
+		};
+		$(".zi").css("margin-top",nt);
+		$(".neirong").css("margin-top",-nt/bh*ch)
+	})
+</script>
+</html>
